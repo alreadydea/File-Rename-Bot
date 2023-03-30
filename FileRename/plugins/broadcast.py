@@ -12,17 +12,17 @@ from pyrogram.errors import FloodWait, InputUserDeactivated, UserIsBlocked, Peer
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
  
-@Client.on_message(filters.command("users") & filters.user(ADMIN))
+@Client.on_message(filters.command("/stats") & filters.user(ADMIN))
 async def get_stats(bot :Client, message: Message):
     mr = await message.reply('**𝙰𝙲𝙲𝙴𝚂𝚂𝙸𝙽𝙶 𝙳𝙴𝚃𝙰𝙸𝙻𝚂.....**')
     total_users = await db.total_users_count()
-    await mr.edit( text=f"❤️‍🔥 TOTAL USER'S = `{total_users}`")
+    await mr.edit( text=f"⊚ ᴛᴏᴛᴀʟ ᴜsᴇʀs |`{total_users}`")
 
 @Client.on_message(filters.command("broadcast") & filters.user(ADMIN) & filters.reply)
 async def broadcast_handler(bot: Client, m: Message):
     all_users = await db.get_all_users()
     broadcast_msg = m.reply_to_message
-    sts_msg = await m.reply_text("broadcast started !") 
+    sts_msg = await m.reply_text("ʙʀᴏᴀᴅᴄᴀsᴛ sᴛᴀʀᴛᴇᴅ !!") 
     done = 0
     failed = 0
     success = 0
@@ -38,9 +38,9 @@ async def broadcast_handler(bot: Client, m: Message):
            await db.delete_user(user['_id'])
         done += 1
         if not done % 20:
-           await sts_msg.edit(f"Broadcast in progress:\nTotal Users {total_users}\nCompleted: {done} / {total_users}\nSuccess: {success}\nFailed: {failed}")
+           await sts_msg.edit(f"ʙʀᴏᴀᴅᴄᴀsᴛ ɪɴ ᴘʀᴏɢʀᴇss:\nᴛᴏᴛᴀʟ ᴜsᴇʀs: {total_users}\nᴛᴏᴛᴀʟ ʙʀᴏᴀᴅᴄᴀsᴛ: {done} / {total_users}\nsᴜᴄᴄᴇss: {success}\nғᴀɪʟᴇᴅ: {failed}")
     completed_in = datetime.timedelta(seconds=int(time.time() - start_time))
-    await sts_msg.edit(f"Broadcast Completed:\nCompleted in `{completed_in}`.\n\nTotal Users {total_users}\nCompleted: {done} / {total_users}\nSuccess: {success}\nFailed: {failed}")
+    await sts_msg.edit(f"ʙʀᴏᴀᴅᴄᴀsᴛ ᴄᴏᴍᴘʟᴇᴛᴇᴅ:\nᴄᴏᴍᴘʟᴇᴛᴇ ɪɴ `{completed_in}`.\n\nᴛᴏᴛᴀʟ ᴜsᴇʀs {total_users}\nᴛᴏᴛᴀʟ ʙʀᴏᴀᴅᴄᴀsᴛᴇᴅ: {done} / {total_users}\nsᴜᴄᴄᴇss: {success}\nғᴀɪʟᴇᴅ: {failed}")
            
 async def send_msg(user_id, message):
     try:
