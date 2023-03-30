@@ -34,10 +34,7 @@ async def start(client, message):
         InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇs', url='https://t.me/TeleBotsUpdate'),
         InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ', url='https://t.me/TeleBotxSupport')
         ]])
-    if START_PIC:
         await message.reply_photo(START_IMG, caption=START_TXT, reply_markup=button)       
-    else:
-        await message.reply_text(text=START_TXT, reply_markup=button, disable_web_page_preview=True)
     
 
 @Client.on_message(filters.command('logs') & filters.user(ADMIN))
