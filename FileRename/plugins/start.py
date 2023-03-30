@@ -78,7 +78,7 @@ async def cb_handler(client, query: CallbackQuery):
         InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇs', url='https://t.me/TeleBotsUpdate'),
         InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ', url='https://t.me/TeleBotxSupport')
         ]])
-        await query.message.edit_text(START_TEXT.format(message.from_user.first_name, message.from_user.id), reply_markup=button)  
+        await query.message.edit_text((START_TEXT), reply_markup=button)  
        
     elif data == "help":
         await query.message.edit_text(
