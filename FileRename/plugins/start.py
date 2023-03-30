@@ -12,8 +12,8 @@ from config import FLOOD, ADMIN
 
 START_IMG = "https://graph.org/file/8665aaff4579f6734a730.jpg"
 
-START_TXT = f"""
-ʜᴇʟʟᴏ {user.mention}
+START_TEXT = f"""
+ʜᴇʟʟᴏ [{}](tg://user?id={})
 ɪ ᴀᴍ sɪᴍᴘʟᴇ ғɪʟᴇ ʀᴇɴᴀᴍᴇ + ғɪʟᴇ ᴛᴏ ᴠɪᴅᴇᴏ ᴄᴏɴᴠᴇʀᴛᴇʀ ʙᴏᴛ 
 ᴡɪᴛʜ ᴘᴇʀᴍᴀɴᴇɴᴛ ᴛʜᴜᴍʙɴᴀɪʟ ᴀɴᴅ ᴄᴜsᴛᴏᴍ ᴄᴀᴘᴛɪᴏɴ sᴜᴘᴘᴏʀᴛ"
     
@@ -34,7 +34,7 @@ async def start(client, message):
         InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇs', url='https://t.me/TeleBotsUpdate'),
         InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ', url='https://t.me/TeleBotxSupport')
         ]])
-    await message.reply_photo((START_IMG), caption=(START_TXT), reply_markup=button)       
+    await message.reply_photo((START_IMG), caption=START_TEXT.format(message.from_user.first_name, message.from_user.id), reply_markup=button)       
     
 
 @Client.on_message(filters.command('logs') & filters.user(ADMIN))
@@ -69,7 +69,7 @@ async def rename_start(client, message):
 async def cb_handler(client, query: CallbackQuery):
     data = query.data 
     if data == "start":
-        await query.message.edit_text(text=(START_TXT),
+        await query.message.edit_text(text=START_TEXT.format(message.from_user.first_name, message.from_user.id), 
            reply_markup=InlineKeyboardMarkup([[
         InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about'),
         InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help')
