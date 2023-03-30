@@ -68,9 +68,8 @@ async def rename_start(client, message):
 @Client.on_callback_query()
 async def cb_handler(client, query: CallbackQuery):
     data = query.data 
-    if data == "start":
-        await query.message.edit_text(text=START_TEXT.format(message.from_user.first_name, message.from_user.id), 
-           reply_markup=InlineKeyboardMarkup([[
+    if data == "start":         
+        button=InlineKeyboardMarkup([[
         InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about'),
         InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help')
         ],[
@@ -78,9 +77,9 @@ async def cb_handler(client, query: CallbackQuery):
         ],[        
         InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇs', url='https://t.me/TeleBotsUpdate'),
         InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ', url='https://t.me/TeleBotxSupport')
-        ]]),)
-          
-
+        ]])
+        await query.message.edit_text(text=START_TEXT.format(message.from_user.first_name, message.from_user.id), reply_markup=button)  
+       
     elif data == "help":
         await query.message.edit_text(
             text=mr.HELP_TXT,
