@@ -1,79 +1,48 @@
-﻿<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-
-### Contents
-- [Info](#info)
-- [Deploy](##deployment-support)
-- [Configs](#configs)
-- [Bot Commands](#botfather-commands)
-- [Members](#follow-me)
-
-### Info
-This is a PowerFull Telegram File Rename and thumbnail & caption Changer Bot with High Speed
-
-### DEPLOYEMENT SUPPORT
-
-<details><summary>Deploy To Koyeb</summary>
-<p>
-<br>
-<a href="https://app.koyeb.com/deploy?type=git&repository=github.com/oVo-HxBots/RENAME-PRO&branch=main&name=rename-pro&env[API_HASH]=1&env[API_ID]=1&env[BOT_TOKEN]=1&env[ADMIN]=1&env[DB_URL]=1&env[DB_NAME]=rename-pro&env[FORCE_SUB]=1&env[START_PIC]=https://telegra.ph/file/d4d3bc4272c732c1aba7f.jpg&run_command=python%20bot.py">
-  <img src="https://www.koyeb.com/static/images/deploy/button.svg" alt="Deploy">
-</a>
+<p align="center">
+<b> ˹ғɪʟᴇ ʀᴇɴᴀᴍᴇ ʙσᴛ˼</b>
 </p>
-</details>
+
+###ᴛʜɪs ɪs ᴀ ᴘᴏᴡᴇʀғᴜʟʟ ᴛᴇʟᴇɢʀᴀᴍ ғɪʟᴇ ʀᴇɴᴀᴍᴇ ᴀɴᴅ ᴛʜᴜᴍʙɴᴀɪʟ ᴀɴᴅ ᴄᴀᴘᴛɪᴏɴ ᴄʜᴀɴɢᴇʀ ʙᴏᴛ ᴡɪᴛʜ ʜɪɢʜ sᴘᴇᴇᴅ
+
+
+<p align="center"><img src="https://telegra.ph/file/3443b024b47952fd9aedf.jpg" width="300"></a></p>
+<p align="center">
+
+
+<h3 align="center">
+    ─ ᴅᴇᴩʟᴏʏ ᴏɴ ʜᴇʀᴏᴋᴜ ─
+</h3>
+
+<p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/Sumit0045/TheHanCockBot"> <img src="https://img.shields.io/badge/Deploy%20On%20Heroku-black?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
+
+
+### ʜᴇʀᴇ ᴄᴏ ғɪɢs
+
+* `ʙᴏᴛ_ᴛᴏᴋᴇɴ`  - Get bot token from @BotFather
+
+* `ᴀᴘɪ_ɪᴅ` - From my.telegram.org 
+
+* `ᴀᴘɪ_ʜᴀsʜ` - From my.telegram.org 
+
+* `ᴀᴅᴍɪɴ` - AUTH or bot controllers id's multiple id use space to split 
+
+* `ᴅʙ_ᴜʀʟ`  - Mongo Database URL from https://cloud.mongodb.com/
+
+* `ᴅʙ_ɴᴀᴍᴇ`  - Your database name from mongoDB. Default will be 'my'
+
+* `ғᴏʀᴄᴇ_sᴜʙ` - your force sub channel username without @ 
 
 
 
-<details><summary>Deploy To Heroku</summary>
-<p>
-<br>
-<a href="https://heroku.com/deploy?template=https://github.com/oVo-HxBots/RENAME-PRO">
-  <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
-</a>
-</p>
-</details>
-
-
-
-### Configs 
-
-* `BOT_TOKEN`  - Get bot token from @BotFather
-
-* `API_ID` - From my.telegram.org 
-
-* `API_HASH` - From my.telegram.org 
-
-* `ADMIN` - AUTH or bot controllers id's multiple id use space to split 
-
-* `DB_URL`  - Mongo Database URL from https://cloud.mongodb.com/
-
-* `DB_NAME`  - Your database name from mongoDB. Default will be 'my'
-
-* `FORCE_SUB` - your force sub channel username without @ 
-
-* `START_PIC` - start message photo
-
-### Botfather Commands
+### ʙᴏᴛs ᴄᴏᴍᴍᴀɴᴅs
 ```
-start - bot alive cheking
-viewthumb - View Thumbnail
-delthumb - Delete Thumbnail
-set_caption - set a custom caption
-see_caption - see your custom caption
-del_caption - delete custom caption
-users - admin only
-broadcast - admin only
+sᴛᴀʀᴛ - ʙᴏᴛ ᴀʟɪᴠᴇ ᴄʜᴇᴄᴋɪɴɢ.
+ᴠɪᴇᴡᴛʜᴜᴍ - ᴠɪᴇᴡ ᴛʜᴜᴍʙɴᴀɪʟ.
+ᴅᴇʟᴛʜᴜᴍ - ᴅᴇʟᴇᴛᴇ ᴛʜᴜᴍʙɴᴀɪʟ.
+sᴇᴛ_ᴄᴀᴘᴛɪᴏɴ - sᴇᴛ ᴀ ᴄᴜsᴛᴏᴍ ᴄᴀᴘᴛɪᴏɴ.
+sᴇᴇ_ᴄᴀᴘᴛɪᴏɴ - sᴇᴇ ʏᴏᴜʀ ᴄᴜsᴛᴏᴍ ᴄᴀᴘᴛɪᴏɴ.
+ᴅᴇʟ_ᴄᴀᴘᴛɪᴏɴ - ᴅᴇʟᴇᴛᴇ ᴄᴜsᴛᴏᴍ ᴄᴀᴘᴛɪᴏɴ.
+sᴛᴀᴛs - ᴀᴅᴍɪɴ ᴏɴʟʏ.
+ʙʀᴏᴀᴅᴄᴀsᴛ - ᴀᴅᴍɪɴ ᴏɴʟʏ.
+
 ```
-
-## Follow Me🔥:
-
-
-<p align="left">
-<a href="https://t.me/HxSupport"><img src="https://img.shields.io/badge/Join%20Our%20Group-HxSupport-darkblue?style=for-the-badge&logo=telegram"></a>
-</p>
-<p align="left">
-<a href="https://github.com/oVo-HxBots"><img src="https://img.shields.io/badge/GitHub-Follow%20on%20GitHub-inactive.svg?style=for-the-badge&logo=github"></a>
-</p>
-<p align="left">
-<a href="https://instagram.com/HxBots"><img src="https://img.shields.io/badge/Instagram-HxBots-magenta?style=for-the-badge&logo=instagram"></a>
-</p>
-
