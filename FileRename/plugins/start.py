@@ -72,7 +72,7 @@ async def rename_start(client, message):
 async def cb_handler(client, query: CallbackQuery):
     data = query.data 
     if data == "start":
-        await query.message.edit_text(
+        await query.message.edit_text(text=START_TXT,
            reply_markup=InlineKeyboardMarkup([[
         InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about'),
         InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help')
