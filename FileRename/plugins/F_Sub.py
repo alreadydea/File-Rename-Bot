@@ -8,7 +8,7 @@ text = """» ᴀᴄᴄᴏʀᴅɪɴɢ ᴛᴏ ᴍʏ ᴅᴀᴛᴀʙᴀsᴇ ʏᴏᴜ
 
 @Client.on_message(filters.private & filters.create(not_subscribed))
 async def is_not_subscribed(client, message):
-    buttons = [[ InlineKeyboardButton(text="📢𝙹𝚘𝚒𝚗 𝙼𝚢 𝚄𝚙𝚍𝚊𝚝𝚎 𝙲𝚑𝚊𝚗𝚗𝚎𝚕📢", url=client.invitelink) ]]
+    buttons = [[ InlineKeyboardButton(text="⊚ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ ⊚", url=client.invitelink) ]]
     await message.reply_photo("https://graph.org/file/8665aaff4579f6734a730.jpg",caption=text, reply_markup=InlineKeyboardMarkup(buttons))
           
 
