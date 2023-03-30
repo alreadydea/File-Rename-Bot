@@ -1,6 +1,4 @@
-<p align="center">
-<b> ˹ғɪʟᴇ ʀᴇɴᴀᴍᴇ ʙσᴛ˼</b>
-</p>
+##˹ғɪʟᴇ ʀᴇɴᴀᴍᴇ ʙσᴛ˼
 
 ᴛʜɪs ɪs ᴀ ᴘᴏᴡᴇʀғᴜʟʟ ᴛᴇʟᴇɢʀᴀᴍ ғɪʟᴇ ʀᴇɴᴀᴍᴇ ᴀɴᴅ ᴛʜᴜᴍʙɴᴀɪʟ ᴀɴᴅ ᴄᴀᴘᴛɪᴏɴ ᴄʜᴀɴɢᴇʀ ʙᴏᴛ ᴡɪᴛʜ ʜɪɢʜ sᴘᴇᴇᴅ
 
@@ -13,25 +11,18 @@
     ─ ᴅᴇᴩʟᴏʏ ᴏɴ ʜᴇʀᴏᴋᴜ ─
 </h3>
 
-<p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/Sumit0045/TheHanCockBot"> <img src="https://img.shields.io/badge/Deploy%20On%20Heroku-black?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
+<p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/Sumit0045/File-Rename-Bot"> <img src="https://img.shields.io/badge/Deploy%20On%20Heroku-black?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
 
 
-### ʜᴇʀᴇ ᴄᴏ ғɪɢs
+### ʜᴇʀᴇ ᴄᴏɴғɪɢs
 
-* `ʙᴏᴛ_ᴛᴏᴋᴇɴ`  - Get bot token from @BotFather
-
-* `ᴀᴘɪ_ɪᴅ` - From my.telegram.org 
-
-* `ᴀᴘɪ_ʜᴀsʜ` - From my.telegram.org 
-
-* `ᴀᴅᴍɪɴ` - AUTH or bot controllers id's multiple id use space to split 
-
-* `ᴅʙ_ᴜʀʟ`  - Mongo Database URL from https://cloud.mongodb.com/
-
-* `ᴅʙ_ɴᴀᴍᴇ`  - Your database name from mongoDB. Default will be 'my'
-
-* `ғᴏʀᴄᴇ_sᴜʙ` - your force sub channel username without @ 
-
+* `ʙᴏᴛ_ᴛᴏᴋᴇɴ`  - ɢᴇᴛ ʙᴏᴛ ᴛᴏᴋᴇɴ ғʀᴏᴍ @BotFather.
+* `ᴀᴘɪ_ɪᴅ` - ғʀᴏᴍ my.telegram.org
+* `ᴀᴘɪ_ʜᴀsʜ` - ғʀᴏᴍ my.telegram.org
+* `ᴀᴅᴍɪɴ` - ᴀᴜᴛʜ ᴏʀ ʙᴏᴛ ᴄᴏɴᴛʀᴏʟʟᴇʀs ɪᴅ's ᴍᴜʟᴛɪᴘʟᴇ ɪᴅ ᴜsᴇ sᴘᴀᴄᴇ ᴛᴏ sᴘʟɪᴛ.
+* `ᴅʙ_ᴜʀʟ`  - ᴍᴏɴɢᴏ ᴅᴀᴛᴀʙᴀsᴇ ᴜʀʟ ғʀᴏᴍ https://cloud.mongodb.com/ 
+* `ᴅʙ_ɴᴀᴍᴇ`  - ʏᴏᴜʀ ᴅᴀᴛᴀʙᴀsᴇ ɴᴀᴍᴇ ғʀᴏᴍ ᴍᴏɴɢᴏ ᴅʙ.
+* `ғᴏʀᴄᴇ_sᴜʙ` - ʏᴏᴜʀ ғᴏʀᴄᴇ sᴜʙ ᴄʜᴀɴɴᴇʟ ᴜsᴇʀɴᴀᴍᴇ ᴡɪᴛʜɪᴏᴜᴛ @ 
 
 
 ### ʙᴏᴛs ᴄᴏᴍᴍᴀɴᴅs
