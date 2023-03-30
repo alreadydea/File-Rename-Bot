@@ -4,7 +4,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, ForceRepl
 from pyrogram.errors import FloodWait
 import humanize
 import random
-from FileRename.helper.txt import HELP_TXT, ABOUT_TXT
+from FileRename.helper.txt import mr
 from FileRename.helper.database import db
 from config import FLOOD, ADMIN 
 
@@ -86,7 +86,7 @@ async def cb_handler(client, query: CallbackQuery):
 
     elif data == "help":
         await query.message.edit_text(
-            text=HELP_TXT,
+            text=mr.HELP_TXT,
             reply_markup=InlineKeyboardMarkup( [[
                InlineKeyboardButton("🔐 ᴄʟᴏsᴇ", callback_data = "close"),
                InlineKeyboardButton("◁ ʙᴀᴄᴋ", callback_data = "start")
@@ -95,7 +95,7 @@ async def cb_handler(client, query: CallbackQuery):
         )
     elif data == "about":
         await query.message.edit_text(
-            text=ABOUT_TXT.format(client.mention),
+            text=mr.ABOUT_TXT.format(client.mention),
             disable_web_page_preview = True,
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔐 ᴄʟᴏsᴇ", callback_data = "close"),
