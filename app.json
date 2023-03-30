@@ -1,9 +1,9 @@
 {
-    "name": "Renamer Bot",
-    "description": "Telegram File Renamer Bot ",
+    "name": "ғɪʟᴇ ʀᴇɴᴀᴍᴇ ʙᴏᴛ",
+    "description": "ᴛᴇʟᴇɢʀᴀᴍ ғɪʟᴇ ʀᴇɴᴀᴍᴇ ʙᴏᴛ ",
     "logo": "https://graph.org/file/91ab4b346dddd0652958c.jpg",
     "keywords": ["Renamer Bot", "Mongo DB"],    
-    "repository": "https://github.com/oVo-HxBots/RENAME-PRO",
+    "repository": "https://github.com/Sumit0045/File-Rename-Bot",
     "env": {
         "API_ID": {
             "description": "Your APP ID From my.telegram.org ",
@@ -31,11 +31,6 @@
         },
         "DB_NAME":{ 
             "description":"Your Mongo DB Database Name ",
-            "value": "rename-pro",
-            "required": false
-        },
-        "START_PIC": {
-            "description": "Your Bot start cmd Pic from",
             "value": "",
             "required": false
         }
