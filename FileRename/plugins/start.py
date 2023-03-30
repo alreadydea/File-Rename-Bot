@@ -34,7 +34,7 @@ async def start(client, message):
         InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇs', url='https://t.me/TeleBotsUpdate'),
         InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ', url='https://t.me/TeleBotxSupport')
         ]])
-        await message.reply_photo(START_IMG, caption=START_TXT, reply_markup=button)       
+    await message.reply_photo((START_IMG), caption=(START_TXT), reply_markup=button)       
     
 
 @Client.on_message(filters.command('logs') & filters.user(ADMIN))
@@ -69,7 +69,7 @@ async def rename_start(client, message):
 async def cb_handler(client, query: CallbackQuery):
     data = query.data 
     if data == "start":
-        await query.message.edit_text(text=START_TXT,
+        await query.message.edit_text(text=(START_TXT),
            reply_markup=InlineKeyboardMarkup([[
         InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about'),
         InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help')
