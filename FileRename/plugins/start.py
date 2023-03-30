@@ -12,10 +12,11 @@ from config import FLOOD, ADMIN
 
 START_IMG = "https://graph.org/file/8665aaff4579f6734a730.jpg"
 
-START_TEXT = f"""
+START_TEXT = """
 ʜᴇʟʟᴏ [{}](tg://user?id={})
 ɪ ᴀᴍ sɪᴍᴘʟᴇ ғɪʟᴇ ʀᴇɴᴀᴍᴇ + ғɪʟᴇ ᴛᴏ ᴠɪᴅᴇᴏ ᴄᴏɴᴠᴇʀᴛᴇʀ ʙᴏᴛ 
 ᴡɪᴛʜ ᴘᴇʀᴍᴀɴᴇɴᴛ ᴛʜᴜᴍʙɴᴀɪʟ ᴀɴᴅ ᴄᴜsᴛᴏᴍ ᴄᴀᴘᴛɪᴏɴ sᴜᴘᴘᴏʀᴛ    
+
 """
 
 
