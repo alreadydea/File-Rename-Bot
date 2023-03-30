@@ -11,44 +11,32 @@ class mr(object):
     ABOUT_TXT = """
 ╭───────────⍟
 ├🤖 𝙼𝚈 𝙽𝙰𝙼𝙴 : {}
-├👑 𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁𝚂 : <a href=https://t.me/hxbots>@HxBots</a> 
-├👨‍💻 𝙿𝚁𝙾𝙶𝚁𝙰𝙼𝙴𝚁 : <a href=https://github.com/oVo-HxBots>oVo-HxBots</a>
-├📕 𝙻𝙸𝙱𝚁𝙰𝚁𝚈 : <a href=https://github.com/pyrogram>Pyrogram</a>
-├✏️ 𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴 : <a href=https://www.python.org>Python 3</a>
-├💾 𝙳𝙰𝚃𝙰 𝙱𝙰𝚂𝙴 : <a href=https://cloud.mongodb.com>MongoDB</a>
-├🌀 𝙼𝚈 𝚂𝙴𝚁𝚅𝙴𝚁 : <a href=https://dashboard.render.com>Render</a>
-├📊 𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚄𝚂 : v3.6.8 [ 𝙼𝙰𝙹𝙾𝚁 ]              
+├👑 𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁𝚂 : <a href=https://t.me/AnonDeveloper>sᴜᴍɪᴛ ʏᴀᴅᴀᴠ</a> 
+├👨‍💻 𝙿𝚁𝙾𝙶𝚁𝙰𝙼𝙴𝚁 : <a href=https://github.com/Sumit0045>ғᴏʟʟᴏᴡ ɢɪᴛʜᴜʙ</a>
+├📕 𝙻𝙸𝙱𝚁𝙰𝚁𝚈 : <a href=https://github.com/pyrogram>ᴘʏʀᴏɢʀᴀᴍ</a>
+├✏️ 𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴 : <a href=https://www.python.org>ᴘʏᴛʜᴏɴ</a>
+├💾 𝙳𝙰𝚃𝙰 𝙱𝙰𝚂𝙴 : <a href=https://cloud.mongodb.com>ᴍᴏɴɢᴏ_ᴅʙ</a>
+├🌀 𝙼𝚈 𝚂𝙴𝚁𝚅𝙴𝚁 : <a href=https://dashboard.heroku.com>ʜᴇʀᴏᴋᴜ</a>
+├📊 𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚄𝚂 : v4.0.0              
 ╰───────────────⍟
                                 """
     HELP_TXT = """
-🌌 <b><u>HOW TO SET THUMBNILE</u></b>
+💌 <b><u>ʜᴏᴡ ᴛᴏ sᴇᴛ ᴛʜᴜᴍʙɴᴀɪʟ</u></b>
   
-•> /start a bot and send any picture to automatically set thumbnile.
-•> /delthumb use this command and delete your old thumbnile.
-•> /viewthumb use this command view your current thumbnile.
+•> <code>/start</code> - <code>ᴀ ʙᴏᴛ ᴀɴᴅ sᴇɴᴅ ᴀɴʏ ᴘɪᴄᴛᴜʀᴇ ᴛᴏ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ sᴇᴛ ᴛʜᴜᴍʙɴᴀɪʟ.</code>
+•> <code>/delthumb</code> - <code>ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴀɴᴅ ᴅᴇʟᴇᴛᴇ ʏᴏᴜʀ ᴏʟᴅ ᴛʜᴜᴍʙɴᴀɪʟ.</code>
+•> <code>/viewthumb</code> - <code>ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴠɪᴇᴡ ʏᴏᴜʀ ᴄᴜʀʀᴇɴᴛ ᴛʜᴜᴍʙᴀɪʟ.</code>
 
-📑 <b><u>HOW TO SET CUSTOM CAPTION</u></b>
-•> /set_caption - set a custom caption
-•> /see_caption - see your custom caption
-•> /del_caption - delete custom caption
+📑 <b><u>ʜᴏᴡ ᴛᴏ sᴇᴛ ᴄᴜsᴛᴏᴍ ᴄᴀᴘᴛɪᴏɴ</u></b>
+•> <code>/set_caption</code> - <code>sᴇᴛ ᴀ ᴄᴜsᴛᴏᴍ ᴄᴀᴘᴛɪᴏɴ</code>
+•> <code>/see_caption</code> - <code>sᴇᴇ ʏᴏᴜʀ ᴄᴜsᴛᴏᴍ ᴄᴀᴘᴛɪᴏɴ</code>
+•> <code>/del_caption</code> - <code>ᴅᴇʟᴇᴛᴇ ᴄᴜsᴛᴏᴍ ᴄᴀᴘᴛɪᴏɴ</code>
 
-Example:- /set_caption 📕 File Name: {filename}
-💾 Size: {filesize}
-⏰ Duration: {duration}
+<code>ᴇxᴀᴍᴘʟᴇ:- /set_caption 📕 ғɪʟᴇ ɴᴀᴍᴇ: {filename}
+💾 sɪᴢᴇ: {filesize}
+⏰ ᴅᴜʀᴀᴛɪᴏɴ: {duration}</code>
 
-✏️ <b><u>HOW TO RENAME A FILE</u></b>
-•> send any file and click rename option and type new file name and \n send select [ document, video, audio ]👈 choice this.
-ℹ️ 𝗔𝗻𝘆 𝗢𝘁𝗵𝗲𝗿 𝗛𝗲𝗹𝗽 𝗖𝗼𝗻𝘁𝗮𝗰𝘁 :- <a href=https://t.me/HxSupport>𝑺𝑼𝑷𝑷𝑶𝑹𝑻 𝑮𝑹𝑶𝑼𝑷</a>
-"""
+✏️ <b><u>ʜᴏᴡ ᴛᴏ ʀᴇɴᴀᴍᴇ ᴀ ғɪʟᴇ HOW TO RENAME A FILE</u></b>
+•> <code>sᴇɴᴅ ᴀɴʏ ғɪʟᴇ ᴀɴᴅ ᴄʟɪᴄᴋ ʀᴇɴᴀᴍᴇ ᴏᴘᴛɪᴏɴ ᴀɴᴅ ᴛʏᴘᴇ ɴᴇᴡ ғɪʟᴇ ᴀɴᴅ\nsᴇɴᴅ sᴇʟᴇᴄᴛ [ ᴅᴏᴄᴜᴍᴇɴᴛ, ᴠɪᴅᴇᴏ, ᴀᴜᴅɪᴏ ]</code>
 
-#⚠️ don't remove our credits 🙏😢😢
-    DEV_TXT = """
-<b><u>Special Thanks & Developers</b></u> 
-
-» 𝗦𝗢𝗨𝗥𝗖𝗘 𝗖𝗢𝗗𝗘 : <a href=https://github.com/oVo-HxBots/RENAME-PRO>𝐑𝐄𝐍𝐀𝐌𝐄 𝐁𝐎𝐓</a>
-» 𝗛𝗢𝗪 𝗧𝗢 𝗗𝗘𝗣𝗟𝗢𝗬 : <a href=https://youtu.be/>HxBots</a>
-
-• ❣️ <a href=https://github.com/oVo-HxBots>oVo-HxBots</a>
-• ❣️ <a href=https://t.me/Kirodewal>Kirodewal</a>
-• ❣️ <a href=https://youtube.com/@hxbots>HxBots YT</a>
 """
