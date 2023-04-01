@@ -3,7 +3,7 @@
 ᴛʜɪs ɪs ᴀ ᴘᴏᴡᴇʀғᴜʟʟ ᴛᴇʟᴇɢʀᴀᴍ ғɪʟᴇ ʀᴇɴᴀᴍᴇ ᴀɴᴅ ᴛʜᴜᴍʙɴᴀɪʟ ᴀɴᴅ ᴄᴀᴘᴛɪᴏɴ ᴄʜᴀɴɢᴇʀ ʙᴏᴛ ᴡɪᴛʜ ʜɪɢʜ sᴘᴇᴇᴅ
 
 
-<p align="center"><img src="https://telegra.ph/file/3443b024b47952fd9aedf.jpg" width="300"></a></p>
+<p align="center"><img src="https://graph.org/file/db3e9b71e41cf06ef5a62.jpg" width="300"></a></p>
 <p align="center">
 
 
