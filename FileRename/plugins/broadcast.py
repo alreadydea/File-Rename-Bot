@@ -12,7 +12,7 @@ from pyrogram.errors import FloodWait, InputUserDeactivated, UserIsBlocked, Peer
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
  
-@Client.on_message(filters.command("/stats") & filters.user(ADMIN))
+@Client.on_message(filters.command("stats") & filters.user(ADMIN))
 async def get_stats(bot :Client, message: Message):
     mr = await message.reply('**𝙰𝙲𝙲𝙴𝚂𝚂𝙸𝙽𝙶 𝙳𝙴𝚃𝙰𝙸𝙻𝚂.....**')
     total_users = await db.total_users_count()
