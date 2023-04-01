@@ -10,7 +10,7 @@ from config import FLOOD, ADMIN
 
 
 
-START_IMG = "https://graph.org/file/8665aaff4579f6734a730.jpg"
+START_IMG = "https://graph.org/file/db3e9b71e41cf06ef5a62.jpg"
 
 START_TEXT = """
 ʜᴇʟʟᴏ [{}](tg://user?id={})
