@@ -5,7 +5,7 @@ import time
 from pyrogram import *
 from pyrogram.types import *
 from random import choice
-from config API_ID, API_HASH, BOT_TOKEN 
+from config import API_ID, API_HASH, BOT_TOKEN 
 from pyrogram import Client, filters
 
 @Client.on_message(filters.private & filters.command("clone"))
