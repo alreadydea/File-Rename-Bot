@@ -16,7 +16,7 @@ async def clone(bot, msg: Message):
     phone = msg.command[1]
     try:
         await text.edit("<code>ʙᴏᴏᴛɪɴɢ ʏᴏᴜʀ ᴄʟɪᴇɴᴛ...</code>")                   
-        client = Client(":memory:", API_ID, API_HASH, bot_token=phone, plugins={"root": "FileRename.modules"})
+        client = Client(":memory:", API_ID, API_HASH, bot_token=phone, plugins={"root": "FileRename.plugins"})
         await client.start()
         user = await client.get_me()
         await msg.reply(f"ʏᴏᴜʀ ᴄʟɪᴇɴᴛ ʜᴀs ʙᴇᴇɴ sᴜᴄᴄᴇssғᴜʟʟʏ sᴛᴀʀᴛᴇᴅ ᴀs @{user.username}! ✅ \n\n ɴᴏᴡ ʏᴏᴜʀ ʙᴏᴛ ʜᴏsᴛᴇᴅ ɪɴ ᴍʏ ʙᴏᴛ sᴇʀᴠᴇʀ\n\nᴛʜᴀɴᴋs ғᴏʀ ᴄʟᴏɴɪɴɢ.")
