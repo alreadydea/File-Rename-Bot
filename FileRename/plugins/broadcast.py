@@ -10,8 +10,7 @@ from pyrogram import Client, filters
 from pyrogram.errors import InputUserDeactivated, UserNotParticipant, FloodWait, UserIsBlocked, PeerIdInvalid, ChatAdminRequired
 
 
-
-# =====================» broadcast «=====================
+# Broadcast messages to individual users
 
 async def broadcast_messages(user_id, message):
     try:
@@ -22,83 +21,83 @@ async def broadcast_messages(user_id, message):
         return await broadcast_messages(user_id, message)
     except InputUserDeactivated:
         await db.delete_user(int(user_id))
-        logging.info(f"{user_id}-Rᴇᴍᴏᴠᴇᴅ ғʀᴏᴍ Dᴀᴛᴀʙᴀsᴇ, sɪɴᴄᴇ ᴅᴇʟᴇᴛᴇᴅ ᴀᴄᴄᴏᴜɴᴛ.")
+        logging.info(f"{user_id} - Removed from database, since deleted account.")
         return False, "Deleted"
     except UserIsBlocked:
-        logging.info(f"{user_id} -Bʟᴏᴄᴋᴇᴅ ᴛʜᴇ ʙᴏᴛ.")
+        logging.info(f"{user_id} - Blocked the bot.")
         return False, "Blocked"
     except PeerIdInvalid:
         await db.delete_user(int(user_id))
-        logging.info(f"{user_id} - PᴇᴇʀIᴅIɴᴠᴀʟɪᴅ")
+        logging.info(f"{user_id} - PeerIdInvalid")
         return False, "Error"
     except Exception as e:
         return False, "Error"
 
 
-        
-@Hiroko.on_message(filters.command("usercast") & filters.user(OWNER_ID) & filters.reply)
-async def users_cast(bot, message):
+# Broadcast messages to all users
+
+@Hiroko.on_message(filters.command("broadcast") & filters.user(OWNER_ID) & filters.reply)
+async def broadcast_to_all(bot, message):
     users = await get_served_users()
     b_msg = message.reply_to_message
-    sts = await message.reply_text(
+    status = await message.reply_text(
         text='Broadcasting your messages...'
     )
     start_time = time.time()
     done = 0
     blocked = 0
     deleted = 0
-    failed =0
-
+    failed = 0
     success = 0
+    
     async for user in users:
-        pti, sh = await broadcast_messages(int(user['id']), b_msg)
-        if pti:
+        success, reason = await broadcast_messages(int(user['id']), b_msg)
+        if success:
             success += 1
-        elif pti == False:
-            if sh == "Blocked":
-                blocked+=1
-            elif sh == "Deleted":
+        elif success is False:
+            if reason == "Blocked":
+                blocked += 1
+            elif reason == "Deleted":
                 deleted += 1
-            elif sh == "Error":
+            elif reason == "Error":
                 failed += 1
         done += 1
-                       
+        
         if not done % 20:
-            await sts.edit(f"Broadcast in progress:\n\nTotal Users {len(users)}\nCompleted: {done} / {len(users)}\nSuccess: {success}\nBlocked: {blocked}\nDeleted: {deleted}")    
+            await status.edit(f"Broadcast in progress:\n\nTotal Users: {len(users)}\nCompleted: {done}/{len(users)}\nSuccess: {success}\nBlocked: {blocked}\nDeleted: {deleted}")
+    
     time_taken = datetime.timedelta(seconds=int(time.time()-start_time))
-    await sts.edit(f"Broadcast Completed:\nCompleted in {time_taken} seconds.\n\nTotal Users {len(users)}\nCompleted: {done} / {len(users)}\nSuccess: {success}\nBlocked: {blocked}\nDeleted: {deleted}")
+    await status.edit(f"Broadcast completed:\n\nTotal Users: {len(users)}\nCompleted: {done}/{len(users)}\nSuccess: {success}\nBlocked: {blocked}\nDeleted: {deleted}\n\nTime taken: {time_taken}")
 
 
+# Broadcast messages to all groups
 
-@Hiroko.on_message(filters.command("group_cast") & filters.user(OWNER_ID) & filters.reply)
+@Hiroko.on_message(filters.command("groupcast") & filters.user(OWNER_ID) & filters.reply)
 async def group_cast(bot, message):
     chats = await get_served_chats()
     b_msg = message.reply_to_message
-    sts = await message.reply_text(
+    status = await message.reply_text(
         text='Broadcasting your messages...'
     )
     start_time = time.time()
     done = 0
-    failed =0
-
+    failed = 0
     success = 0
+    
     async for chat in chats:
-        pti, sh = await broadcast_messages(int(chat['id']), b_msg)
-        if pti:
+        success, reason = await broadcast_messages(int(chat['id']), b_msg)
+        if success:
             success += 1
-        elif pti == False:
-            if sh == "Blocked":
-                blocked+=1
-            elif sh == "Deleted":
-                deleted += 1
-            elif sh == "Error":
+        elif success is False:
+            if reason == "Error":
                 failed += 1
         done += 1
         await asyncio.sleep(2)
         if not done % 20:
-            await sts.edit(f"Broadcast in progress:\n\nTotal Chats {len(chats)}\nCompleted: {done} / {len(chats)}\nSuccess: {success}\nFailed: {failed}")    
+            await status.edit(f"Broadcast in progress:\n\nTotal Chats: {len(chats)}\nCompleted: {done}/{len(chats)}\nSuccess: {success}\nFailed: {failed}")
+    
     time_taken = datetime.timedelta(seconds=int(time.time()-start_time))
-    await sts.edit(f"Broadcast Completed:\nCompleted in {time_taken} seconds.\n\nTotal Chats {len(chats)}\nCompleted: {done} / {len(chats)}\nSuccess: {success}\nFailed: {failed}")
+    await status.edit(f"Broadcast completed:\n\nTotal Chats: {len(chats)}\nCompleted: {done}/{len(chats)}\nSuccess: {success}\nFailed: {failed}\n\nTime taken: {time_taken}")
 
 
 
